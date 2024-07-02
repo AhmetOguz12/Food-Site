@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
+/* ortak kodlar start*/
+.button {
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+  padding: 12px 20px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+/* ortak kodlar end*/
+
+header {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 10%;
+  height: 80px;
+}
+
+header .logo {
+  font-size: 28px;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+
+header ul li a:hover {
+  color: #000;
+}
+
+.back-img {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  filter: brightness(60%);
+}
+/*section start*/
+section {
+  z-index: 2;
+  margin-left: 10%;
+  position: absolute;
+  margin-top: 50px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+section .pp {
+  font-size: 82px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.row {
+  width: 700px;
+}
+
+.card {
+  display: inline-block;
+  width: 180px;
+  height: 230px;
+  padding: 15px 20px;
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  margin: 20px 0 0 40px;
+  border: 1px solid #fff;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border: 1px solid #000;
+}
+
+.card-haed {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 6px 5px;
+  border-radius: 5px;
+}
+.card-bottom {
+  font-size: 18px;
+  margin-top: 80px;
+  width: 100px;
+}
+
+.card.card1 {
+  background-image: url(img/hamburber2.jpeg);
+}
+
+.card.card2 {
+  background-image: url(img/hamburger.jpeg);
+}
+
+.card.card3 {
+  background-image: url(img/hamburber3.jpeg);
+}
+
+.card.card4 {
+  background-image: url(img/hamburder4.jpg);
+}
+
+/*CARD DETAİLİNG START*/
+.menu {
+  margin-top: 620px;
+  background-color: #e4dada;
+  padding: 30px;
+}
+.card-detailing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  gap: 30px;
+}
+
+.card-in {
+  border: 1px solid red;
+  height: 400px;
+  width: 270px;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.card-in:hover {
+  border: 1px solid #000;
+}
+.card-img {
+  height: 180px;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  transition: all 0.5s;
+}
+
+.card-img:hover {
+  opacity: 0.5;
+}
+.card-name {
+  margin: 10px 10px;
+}
+
+.card-desc {
+  margin: 10px 10px;
+}
+
+.head {
+  margin: 0 150px 40px 150px;
+  font-size: 36px;
+  border-bottom: 2px solid #000;
+}
+.card-price {
+  margin-top: 50px;
+  margin-left: 190px;
+  font-weight: bold;
+}
+
+.card-button {
+  margin-top: 20px;
+  margin-left: 25%;
+  padding: 12px 30px;
+}
+
+.card-button:hover {
+  padding: 12px 35px;
+}
+
+/*lokasyon start*/
+
+iframe {
+  margin-left: 150px;
+  margin-bottom: 30px;
+  height: 480px;
+  width: 1165px;
+}
+
+/*iletişim start*/
+.iletisim {
+  background-image: url(iletisim.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.iletisim-detailing {
+  padding: 170px 0 0 450px;
+  color: #fff;
+}
+
+.iletisim-input {
+  display: flex;
+}
+
+.iletisim-header {
+  font-size: 42px;
+  margin-left: 210px;
+  margin-bottom: 20px;
+}
+
+.iletisim-desc {
+  margin-left: 255px;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.input-name label {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.input-name input {
+  padding: 5px 20px;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.input-mail label {
+  font-size: 20px;
+  margin-left: 60px;
+}
+
+.input-mail input {
+  margin-left: 50px;
+  padding: 5px 20px;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.button.button-iletisim {
+  margin-top: 20px;
+  padding: 8px 265px;
+  font-size: 18px;
+  letter-spacing: 8px;
+}
+
+/*footer start*/
+
+footer {
+  background-color: #000;
+  color: #fff;
+  height: 180px;
+  border-top: 1px solid #fff;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  margin-right: 80px;
+  margin-top: 30px;
+}
+
+.page p {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.page-li {
+  font-weight: unset;
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.footer-iletisim {
+  margin-top: 20px;
+}
+.footer-iletisim-p {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.social-media {
+  margin-left: 80px;
+  font-size: 40px;
+}
+
+.social-media-p {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.social-media i {
+  background-color: #a8a6a6;
+  padding: 2px 5px;
+}
